@@ -1,0 +1,303 @@
+>Cluster 0
+0	100nt, >seq0... *
+>Cluster 1
+0	100nt, >seq1... *
+>Cluster 2
+0	100nt, >seq47... *
+>Cluster 3
+0	100nt, >seq48... *
+>Cluster 4
+0	100nt, >seq49... *
+>Cluster 5
+0	100nt, >seq50... *
+>Cluster 6
+0	100nt, >seq52... *
+>Cluster 7
+0	100nt, >seq56... *
+>Cluster 8
+0	100nt, >seq57... *
+>Cluster 9
+0	100nt, >seq58... *
+>Cluster 10
+0	100nt, >seq59... *
+>Cluster 11
+0	100nt, >seq60... *
+>Cluster 12
+0	100nt, >seq61... *
+1	100nt, >seq63... at +/97.00%
+>Cluster 13
+0	100nt, >seq67... *
+>Cluster 14
+0	100nt, >seq70... *
+>Cluster 15
+0	100nt, >seq71... *
+>Cluster 16
+0	100nt, >seq72... *
+>Cluster 17
+0	100nt, >seq73... *
+>Cluster 18
+0	100nt, >seq74... *
+>Cluster 19
+0	100nt, >seq76... *
+>Cluster 20
+0	100nt, >seq77... *
+>Cluster 21
+0	100nt, >seq78... *
+>Cluster 22
+0	100nt, >seq79... *
+1	100nt, >seq93... at +/98.00%
+>Cluster 23
+0	100nt, >seq81... *
+>Cluster 24
+0	100nt, >seq84... *
+>Cluster 25
+0	100nt, >seq87... *
+>Cluster 26
+0	100nt, >seq88... *
+>Cluster 27
+0	100nt, >seq89... *
+>Cluster 28
+0	100nt, >seq91... *
+>Cluster 29
+0	100nt, >seq92... *
+>Cluster 30
+0	100nt, >seq95... *
+>Cluster 31
+0	100nt, >seq98... *
+>Cluster 32
+0	100nt, >seq99... *
+>Cluster 33
+0	100nt, >seq101... *
+>Cluster 34
+0	100nt, >seq106... *
+>Cluster 35
+0	100nt, >seq107... *
+>Cluster 36
+0	100nt, >seq108... *
+>Cluster 37
+0	100nt, >seq109... *
+>Cluster 38
+0	100nt, >seq110... *
+>Cluster 39
+0	100nt, >seq111... *
+>Cluster 40
+0	100nt, >seq112... *
+>Cluster 41
+0	100nt, >seq113... *
+>Cluster 42
+0	100nt, >seq114... *
+>Cluster 43
+0	100nt, >seq115... *
+>Cluster 44
+0	100nt, >seq116... *
+>Cluster 45
+0	100nt, >seq117... *
+>Cluster 46
+0	100nt, >seq118... *
+>Cluster 47
+0	100nt, >seq143... *
+>Cluster 48
+0	100nt, >seq144... *
+>Cluster 49
+0	100nt, >seq155... *
+>Cluster 50
+0	100nt, >seq156... *
+>Cluster 51
+0	100nt, >seq157... *
+>Cluster 52
+0	100nt, >seq158... *
+>Cluster 53
+0	100nt, >seq160... *
+>Cluster 54
+0	96nt, >seq65... *
+>Cluster 55
+0	96nt, >seq94... *
+>Cluster 56
+0	94nt, >seq104... *
+>Cluster 57
+0	92nt, >seq83... *
+>Cluster 58
+0	92nt, >seq152... *
+>Cluster 59
+0	90nt, >seq45... at +/100.00%
+1	91nt, >seq90... *
+>Cluster 60
+0	90nt, >seq29... *
+>Cluster 61
+0	90nt, >seq86... *
+>Cluster 62
+0	90nt, >seq159... *
+>Cluster 63
+0	88nt, >seq54... *
+>Cluster 64
+0	87nt, >seq19... *
+>Cluster 65
+0	87nt, >seq46... *
+>Cluster 66
+0	87nt, >seq75... *
+>Cluster 67
+0	86nt, >seq64... *
+>Cluster 68
+0	86nt, >seq82... *
+>Cluster 69
+0	85nt, >seq21... *
+>Cluster 70
+0	85nt, >seq35... *
+>Cluster 71
+0	84nt, >seq38... *
+>Cluster 72
+0	84nt, >seq42... *
+>Cluster 73
+0	84nt, >seq43... *
+>Cluster 74
+0	84nt, >seq80... *
+>Cluster 75
+0	78nt, >seq127... at +/91.03%
+1	84nt, >seq131... *
+>Cluster 76
+0	82nt, >seq30... *
+>Cluster 77
+0	82nt, >seq33... *
+1	82nt, >seq34... at -/97.56%
+>Cluster 78
+0	82nt, >seq40... *
+>Cluster 79
+0	82nt, >seq55... *
+>Cluster 80
+0	82nt, >seq133... *
+>Cluster 81
+0	81nt, >seq132... *
+>Cluster 82
+0	77nt, >seq119... at -/94.81%
+1	77nt, >seq120... at +/92.21%
+2	78nt, >seq121... at +/92.31%
+3	80nt, >seq125... *
+>Cluster 83
+0	80nt, >seq137... *
+>Cluster 84
+0	79nt, >seq62... *
+>Cluster 85
+0	79nt, >seq69... *
+>Cluster 86
+0	79nt, >seq135... *
+>Cluster 87
+0	79nt, >seq136... *
+>Cluster 88
+0	78nt, >seq66... *
+>Cluster 89
+0	78nt, >seq96... *
+>Cluster 90
+0	71nt, >seq122... at +/90.14%
+1	78nt, >seq123... *
+>Cluster 91
+0	71nt, >seq124... at -/90.14%
+1	78nt, >seq126... *
+>Cluster 92
+0	76nt, >seq140... *
+>Cluster 93
+0	75nt, >seq105... *
+>Cluster 94
+0	74nt, >seq8... *
+>Cluster 95
+0	74nt, >seq10... *
+>Cluster 96
+0	74nt, >seq15... *
+>Cluster 97
+0	74nt, >seq16... *
+>Cluster 98
+0	74nt, >seq17... *
+>Cluster 99
+0	74nt, >seq22... *
+1	74nt, >seq23... at -/100.00%
+>Cluster 100
+0	74nt, >seq24... *
+>Cluster 101
+0	74nt, >seq31... *
+1	74nt, >seq32... at -/98.65%
+>Cluster 102
+0	74nt, >seq39... *
+>Cluster 103
+0	74nt, >seq44... *
+>Cluster 104
+0	73nt, >seq2... *
+>Cluster 105
+0	73nt, >seq3... *
+>Cluster 106
+0	73nt, >seq4... *
+1	73nt, >seq11... at -/91.78%
+>Cluster 107
+0	73nt, >seq5... *
+>Cluster 108
+0	73nt, >seq6... *
+1	73nt, >seq7... at -/100.00%
+>Cluster 109
+0	73nt, >seq12... *
+>Cluster 110
+0	73nt, >seq13... *
+1	73nt, >seq14... at -/100.00%
+>Cluster 111
+0	73nt, >seq18... *
+>Cluster 112
+0	73nt, >seq26... *
+>Cluster 113
+0	73nt, >seq28... *
+>Cluster 114
+0	73nt, >seq36... *
+1	73nt, >seq37... at -/100.00%
+>Cluster 115
+0	72nt, >seq20... *
+>Cluster 116
+0	72nt, >seq25... *
+>Cluster 117
+0	72nt, >seq27... *
+>Cluster 118
+0	72nt, >seq53... *
+>Cluster 119
+0	70nt, >seq129... at +/95.71%
+1	72nt, >seq134... *
+>Cluster 120
+0	72nt, >seq139... *
+>Cluster 121
+0	72nt, >seq142... *
+>Cluster 122
+0	72nt, >seq154... *
+>Cluster 123
+0	71nt, >seq9... *
+>Cluster 124
+0	71nt, >seq41... *
+>Cluster 125
+0	71nt, >seq130... *
+1	69nt, >seq138... at +/98.55%
+>Cluster 126
+0	70nt, >seq100... *
+>Cluster 127
+0	70nt, >seq128... *
+>Cluster 128
+0	69nt, >seq102... *
+>Cluster 129
+0	67nt, >seq103... *
+>Cluster 130
+0	66nt, >seq141... *
+>Cluster 131
+0	65nt, >seq51... *
+>Cluster 132
+0	64nt, >seq85... *
+>Cluster 133
+0	64nt, >seq153... *
+>Cluster 134
+0	61nt, >seq68... *
+>Cluster 135
+0	58nt, >seq97... *
+>Cluster 136
+0	53nt, >seq145... *
+>Cluster 137
+0	43nt, >seq146... *
+1	42nt, >seq151... at +/90.48%
+>Cluster 138
+0	43nt, >seq147... *
+>Cluster 139
+0	42nt, >seq148... *
+>Cluster 140
+0	42nt, >seq150... *
+>Cluster 141
+0	41nt, >seq149... *
