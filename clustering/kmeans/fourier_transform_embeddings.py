@@ -12,15 +12,13 @@ from datasets import load_dataset
 
 
 class FourierEmbeddingModel():
-    def __init__(self, F=64, H=128):
+    def __init__(self, F=8, H=16, D=16):
         self.F = F
         self.H = H
+        self.D = D 
 
    
 
-    @property
-    def embed_dim(self):
-        return self.F  
 
     def gelu(self, x):
         return 0.5 * x * (1 + np.tanh(np.sqrt(2 / np.pi) * (x + 0.044715 * x**3)))
@@ -55,21 +53,22 @@ class FourierEmbeddingModel():
         x = self.get_tokenizations(sequences)
         N, G, M = x.shape
 
-        W = np.random.randn(self.F // 2, M)
+        W_r = np.random.randn(self.F // 2, M)
 
         W1 = np.random.randn(self.F, self.H)
         B1 = np.random.randn(self.H)
-        D_out = G * 16
-        W2 = np.random.randn(self.H, D_out // G)
-        B2 = np.random.randn(D_out // G)
+        D = G * self.D
+        W2 = np.random.randn(self.H, D // G)
+        B2 = np.random.randn(D // G)
 
         x_flat = x.reshape(-1, M)
-        F_out = self.eq_2(x_flat, W)
+        F_out = self.eq_2(x_flat, W_r)
         Y = self.two_layer_NN(F_out, W1, W2, B1, B2)
-        embeddings = np.reshape(Y, (N, D_out))
+        embeddings = np.reshape(Y, (N, D))
 
-        # Return in [N, num_layers, embed_dim] format
-        return embeddings[:, None, :]  # shape [N, 1, D_out]
+        return np.expand_dims(embeddings, axis=1)
+
+
 
 
 from dgeb.evaluators import ClusteringEvaluator
@@ -90,6 +89,7 @@ def compute_v_scores():
 
 def plot_v_scores():
     fourier_embedding_v_scores = compute_v_scores()
+    print(fourier_embedding_v_scores)
     v_scores_list = [dict['v_measure'] for dict in fourier_embedding_v_scores]
     plt.figure(figsize=(8, 6))
     plt.plot(v_scores_list)
@@ -103,4 +103,43 @@ def plot_v_scores():
     # Show the plot
     plt.show()
 
-plot_v_scores()
+
+def hyperparameter_grid_search():
+    values = [8, 16, 32, 64, 128]
+    dataset = load_dataset("tattabio/e_coli_rnas")["train"]
+    sequences = dataset["Sequence"]
+    labels = dataset["Label"]
+    max_indices = ()
+    max = 0
+    v_scores_list = []
+    for D in values:
+        for H in values:
+            for F in values:
+                fourier_model = FourierEmbeddingModel(F, H, D)
+                embeddings = fourier_model.encode(sequences)
+
+                evaluator = ClusteringEvaluator(embeds=embeddings[:, 0], labels=labels)
+                v_measure = evaluator()
+                print(v_measure)
+                if v_measure['v_measure'] > max:
+                    max = v_measure['v_measure']
+                    max_indices = (D,H,F)
+                v_scores_list.append(v_measure['v_measure'])
+    print(f'v-measure score for the values of hyperparameters is {max_indices} with {max}')
+    print(f'statistics of hyperparameters are maximum: {max} with mean: {np.mean(v_scores_list)} median: {np.median(v_scores_list)}')
+    plt.figure(figsize=(8, 6))
+    plt.boxplot(v_scores_list)
+
+
+    # Add labels and title
+    plt.xlabel('Trial Number', fontsize=12)
+    plt.ylabel('V-score', fontsize=12)
+    plt.title('V-scores for each trial', fontsize=14)
+    plt.grid(True)
+
+    # Show the plot
+    plt.show()
+
+
+
+hyperparameter_grid_search()
